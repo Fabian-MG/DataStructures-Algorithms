@@ -1,4 +1,4 @@
-class LinkList {
+export default class LinkList {
   constructor(value) {
     this.head = {
       value: value,
@@ -69,7 +69,7 @@ class LinkList {
     prevNode.next = unwantedNode.next;
     this.length--;
 
-    this.printList()
+    this.printList();
   }
 
   traverseToIndex(index) {
@@ -82,6 +82,10 @@ class LinkList {
     }
 
     return currentNode;
+  }
+
+  reverse() {
+     
   }
 
   printList() {
@@ -104,5 +108,4 @@ myLinkList.append(5);
 myLinkList.append(10);
 myLinkList.prepend(37);
 myLinkList.insert(1, 55);
-myLinkList.remove(2)
-
+myLinkList.remove(2);
